@@ -57,3 +57,19 @@ print(re.match(patron,texto))
 #search busca en todo el texto y te da la primera vez que aparece el patron
 
 #split me permite separar los strings en base a un caracter en particular
+
+#Findall
+print(re.findall(patron, texto))
+
+#Tupla es un tipo de dato que es entre parentesis, no es mutable. Se usan en general para decir este valor siempre está asociado para este valor
+#Se usa para almacenar datos que se que no van a cambiar
+
+#Listas son mutables (pueden cambiar)
+
+#si quiero decir que tambien empieza con a en patron = "^a[a,z]"
+
+#tanto search como match nos daban los objetitos
+#para traer el resultado de los objetitos, usamos group() 
+#Group() me agrupa el string --> me permite obtener el string de la busqueda que hice
+
+print(re.search(patron, texto).group())
