@@ -73,3 +73,29 @@ print(re.findall(patron, texto))
 #Group() me agrupa el string --> me permite obtener el string de la busqueda que hice
 
 print(re.search(patron, texto).group())
+
+#OTRO CASO
+import re
+texto = "Estoy en la clase de Informática y luego tengo clase de Microeconomia"
+patron = "clase(.*)y"
+print(re.search(patron, texto), "\n")
+print(re.search(patron, texto).group())
+print(re.search(patron, texto).group(0))
+print(re.search(patron, texto).group(1))
+
+
+#todo lo que esta entre clase e y
+
+#group(0), la version del resultado incluyendo lo que yo busque (entre lo que yo busque)
+#group(1) --> solo el resultado de la busqueda sin incluir lo que yo busque
+
+#in me sirve para buscar dentro de un string
+
+#ej: mail
+#que me encuentre cualquier cosa que este antes de @gmail y pongo group(1) asi que me quedo con el mail completo
+
+print(re.sub(patron, "###", texto))
+
+#me reemplaza la primera palabra patron por ###, similar a replace pero en sub puedo decirle exactamente en donde reemplazar.
+
+
