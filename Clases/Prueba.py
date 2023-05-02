@@ -26,12 +26,22 @@
 # else:
 #     print(False)
 
+#Otro ejemplo
+# entrada = input("introduzca un navegador: \n")
 
-entrada = input("introduzca un navegador: \n")
+# navegadores = ["chrome", "firefox"]
 
-navegadores = ["chrome", "firefox"]
+# if entrada in navegadores:
+#     print("esta")
+# else:
+#     print("no esta")
 
-if entrada in navegadores:
-    print("esta")
-else:
-    print("no esta")
+frase = "Lo que escribas, lo repito: "
+frase += "\nIntroduce `salir´ para terminar \n"
+
+mensaje = " "
+
+while mensaje != "salir":
+    mensaje = input(frase)
+    print(mensaje)
+print("Se ha salido del Bucle")

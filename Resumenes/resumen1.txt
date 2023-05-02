@@ -1,0 +1,73 @@
+re sirve para verificar si una cadena de caracteres contiene el patron de busqueda especificado (un mini buscador para encontrar palabras en el texto)
+
+Expresiones regulares en Python:
+- findall()
+- search()
+- spli()
+- sub()
+
+El search va a buscar la primera vez que aparezca la letra que le pido que busque
+
+El findall encuentra todos los resultados que le pasemos como argumentos
+
+El split divide una cadena de caracteres a partir de un patron
+        EL numero que ponemos en: resultado = re.split (" ", texto, 4)
+        Este 4 nos esta diciendo que se limita a encontrar espacios 4 veces nada mas
+
+El sub reemplaza las coincidencias por lo que le especifiquemos en el segundo argumento
+
+Count --> nos permite limitar el maximo de coincidencias que va a reemplazar.
+        resultado = re.sub (" ", "-", texto, 4)
+        Este 4 nos limita a la cantidad de veces que se va a reemplazar el espacio por el guionn
+
+
+EXPRESIONES REGULARES EN PYTHON - SECUENCIAS ESPECIALES
+\A --> devuelve coincidencia si los caracteres especificados estan al principio de la cadena
+\b 
+\B 
+\d
+\D --> devuelve una coincidencia donde la cadena no contiene digitos (devuelve todos los caracteres que no sean digitos por separados) (incluye espacios)
+\s 
+\S 
+\w 
+\W 
+\Z 
+
+
+EXPRESIONES REGULARES EN PYTHON - METACARACTERES
+[] --> podemos especificar un set de caracteres a buscar
+\ --> la que especifica que seguido de ella hay una secuencia especial
+. --> sirve para sustituir caracteres (te imprime los caracteres que en realidad son esos puntos)
+*
+$
++
+()
+{}
+| --> nos permite buscar varios resultados a la vez
+^
+
+Carácter	Descripción	Ejemplo
+[]	Un conjunto de caracteres.	"[a-z]"
+{}	Especifican un número determinado de resultados. En el ejemplo el {2} representa dos letras o.	"zo{2}lógico"
+()	Agrupan patrones.	
+\	Se utiliza para especificar una secuencia especial.	"\A"
+|	Se utiliza para especificar que encuentre un resultado u otro.	"par|impar"
+.	Carácter comodín, reemplaza cualquier carácter.	"programa..ón fác.l"
+^	Comienza con lo que le escribas.	"^hola"
+$	Termina con lo que le escribas.	"mundo$"
+*	Ninguno o más resultados.	"es*"
++	Uno o más resultados.	"es+"
+
+EXPRESIONES REGULARES EN PYTHON - SETS
+Se especifican con los corchetes, podemos poner las letras que queramos y nos buscara las letras por separado
+Puede buscar entre rangos de letras
+
+
+MANEJO DE EXCEPCIONES
+
+Bloque TRY --> permitee probar un bloque de codigo en busca de errores
+Bloque EXCEPT --> permite manejar errores en caso de que estos ocurran
+Bloque FINALLY --> se ejecuta siempre, tengamos o no error
+
+
+VALUE ERROR: evalua los errores con tipos de datos erroneos (ejemplo: poner un string donde hay que poner un integer)

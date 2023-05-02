@@ -1,0 +1,11 @@
+TUTORIAL PARA DESCARGAR
+
+1- voy a git hub copio el codigo
+2- voy a la terminal de la compu y pongo: ls 
+3- busco donde esta mi carpeta pongo: cd y el nombre de la carpeta
+4- ahi pongo git clone y el link
+
+TUTORIAL PARA CARGAR
+
+1- voy a la terminal y pongo: git add.
+2- 

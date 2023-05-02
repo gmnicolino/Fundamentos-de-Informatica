@@ -1,0 +1,16 @@
+RESUMEN PYTHON
+
+mensaje = "Hola Mundo"
+
+mensaje es la variable
+"Hola mundo" es el string
+
+Las variables pueden ir cambiando por diversos factores
+Las variables pueden ser (numeros, fechas, nombres)
+
+String siempre se escribe entre comillas y se puede almacenar en una variable
+
+Concatenar/unir --> usamos el + 
+Se puede concatenar strings almacenandolos o no en variables 
+
+
