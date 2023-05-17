@@ -1,0 +1,222 @@
+❖ CLASE: es un elemento de programación que puede tomar atributos y métodos. Una clase es el molde que se usa para generar objetos. Trabajas con el objeto. Además una clase es un modelo en la etapa de modelado
+
+❖ Atributos: van a tener siempre el self. antes. Un atributo puede tomar como valor un valor inicial o el valor que tomamos como parámetro
+
+❖ Parámetros: energia, edad (lo que pasamos entre paréntesis)
+
+❖ SELF: la referencia a la instancia del objeto
+No siempre son la misma cantidad de parámetros que de atributos.
+Diferencia entre función y método: los métodos se encuentran dentro de la clase y la función no
+Diferencia entre método y procedimiento: el procedimiento no está dentro de la clase y el método si
+Función y procedimiento: procedimiento no tiene retorno(bloque de código que empieza con un def y no retorna nada) y la función si
+
+❖ El conjunto de atributos es ESTADO (si me pregunta estado tengo que nombrar todos los atributos incluyendo la palabra self.)
+
+❖ INTERFAZ: conjunto de métodos/mensajes que puede entender la clase.
+
+➢ parcial:comparten parte de los métodos(lo que está después del def) entre
+clases
+
+➢ toda:comparten todos los métodos entre clases
+
+➢ nada:no comparten ningún método entre clases
+
+➢ por ahí con una minima modificacion/reescripción podemos hacer que la
+interfaz sea parcial
+
+❖ FUNCIÓN: sirve para evitar tener que repetir. Además atomiza la responsabilidad (delegas responsabilidades)
+
+❖ Si quiero que una clase tome algo de otra clase, lo pongo entre paréntesis:
+  ❖ Sentencia que se usa para instalar librerias: PIP INSTALL
+
+❖ POSTMAN: sirve para simular el tratamiento que tiene una página (pasa cuando no
+tienes acceso a la página o el equipo no tiene página armada)
+
+❖ Tipos de Booklets en Python: WHILE, FOR
+➢ WHILE: tiene una condición de entrada y la misma es de salida
+➢ FOR: tiene una condición de entrada, establece la de salida y provoca un
+cambio con cada iteración
+
+❖ WHERE: puede achicar la búsqueda en el select (puede traer por id, por nombre, etc) Si No hay errores puede traer resultados
+
+❖ Lenguajes compilados: se escriben en un lenguaje y después son transformados a código de maquinas
+➢ C, basic, adas, C++
+
+❖ Lenguajes interpretados(usan códigos ya existentes): agarran partes compiladas y
+códigos de otros lenguajes ➢ Python, JavaScript
+
+❖ Lenguajes de bajo nivel: escribis lenguaje de máquina, programas sobre el assembler de la máquina
+
+❖ Lenguajes de máquina: Assembler
+
+❖ Lenguaje de las bases de datos: SQL
+
+❖ ¿Es costoso un ordenador? Depende del contenido de lo que tengas que ordenar, pero en general si
+
+❖ ORDENADOR: ordena una lista dependiendo del criterio que se establezca
+
+❖ ¿Es costoso un autoincrement? ¿Por qué? Si es costoso
+
+ ❖ ¿Qué función tiene la identación en Python? ordenar el código, para que algo quede dentro de otro. Es una necesidad de prolijidad de los lenguajes de programación
+
+❖ Bases de datos:
+➢ Postgres
+➢ MongoDB
+➢ Oracle
+➢ Sqlite (debatible, ya que no es un server y es relacional que se usa en
+celulares)
+
+❖ Frameworks: grandes librerías para solucionar una problemática y están en un determinado lenguaje(se usa para solucionar algo muy grande):
+➢ Flask(Python)
+➢ Django(Python)
+➢ Node.js (JavaScript)
+➢ Fast API (Python)
+➢ Bootstrap (CSS y JavaScript)
+
+❖ No se puede sumar un none
+
+❖ No se puede sumar un número y una “palabra”
+
+❖ El backend es nuestro servidor
+
+❖ El frontend es la interface
+
+❖ INIT: cumple la función de obligar al ........ for a poner algunos datos
+
+❖ SELECT* FROM: trae todo de la base de datos
+➢ Selecciona elementos de la base de datos que cumplan los requisitos. Si puede, si la base de datos está vacía o si no hay ningún dato que matchee los criterios
+
+❖ DELETE* FROM: elimina todo, por lo que es necesario poner un where para indicar que borrar
+
+❖ UPDATE: cambiar información en la base de datos. No tiene que tener un criterio demasiado abarcativo ni un where porque puede generar cambios en todos los campos o registros (esto es malo)
+
+❖ INSERT: mete datos en la base de datos
+
+❖ La sentencia que crea un ambiente virtual es VIRTUALENV
+
+❖ VIRTUALENV: es un ambiente virtual en donde puedo instalar mis librerías sin
+afectar la totalidad del sistema
+
+❖ GET: trae información
+
+❖ POST: te responde el servidor con algo
+
+❖ PUT: cambia la información
+
+❖ INPUT: el programa se detiene y espera que el usuario ponga un dato
+
+❖ LISTAS: mutable, ordenada, admite valores repetidos
+
+
+ ❖ TUPLAS: inmutable, ordenadas, admite valores repetidos
+
+❖ SET: inmutable, sin orden, son iterables
+
+❖ DICCIONARIOS: mutable pero no iterable(que tiene la capacidad de repetirse)
+
+❖ Los ordenadores de burbujeo tienen como objetivo ordenar la información de una lista, son costosos pero depende del tamaño de la lista o base de datos
+
+❖ Bucles infinitos: sistemas que tienen que estar funcionando todo el tiempo (las computadoras están todo el tiempo fijándose de que el usuario esté tocando alguna tecla)
+➢ While true ➢ While
+
+❖ Utilidad de la ascendencia max y min en una lista Python? Ordena ascendente o descendente las listas, se puede hacer a mano pero es un trabajo difícil
+
+❖ Un max o min no tiene sentido hacerlo en una lista ordenada
+
+❖ La sentencia que se usa para instalar paquetes de Python: Pip install (librería) o Pip Uninstall (librería)
+
+❖ ¿Cómo ver la versión de Python en el cmd? Python – version
+
+❖ Nombre de las built-in libraries (librerías ya incluidas en Python)? (No hay que ponerles pip.install)
+➢ Datetime ➢ Time
+
+❖ Tipos de colecciones:
+➢ VECTORES/LISTAS: lista de ítems que están relacionados y que tienen un
+órden
+➢ Tupla
+➢ Diccionario
+➢ Set
+
+❖ Para saber el largo de una lista uso len(lista)
+
+❖ Booklet/repetición: en base a una decisión repetimos el programa (ej: repetición
+hasta que se cumpla una condición o se puede repetir mientras se da una condición)
+
+❖ Tipos de datos:
+➢ float → reales
+➢ int → enteros
+➢ char → caracteres
+➢ string →cadena de caracteres
+División entera: //
+
+❖ SCOPE: hace referencia al alcance de las variables
+
+ - locales: las variables de las funciones son de ámbito local (solo podemos acceder a ella dentro de la misma función)
+- global: las variables que se crean fuera de las funciones son globales
+No podemos reemplazar o asignar valores diferentes a variables globales desde dentro de la función
+Para hacer globales las variables locales debo usar la palabra GLOBAL
+Primero se ejecuta la función principal (la de afuera/pegada al borde) y sigue con la anidada (la que está dentro de la principal)
+num1 = 50
+def funcion1():
+   global num1
+   num1 = 10
+funcion1()
+print(num1)
+En este caso print dara como resultado 10, ya que se encuentran en el mismo scope y toma
+el valor mas nuevo de la variable. Es lo mismo que:
+num1 = 50
+num1 = 10
+def funcion1():
+   global num1
+   num1 = 10
+funcion1()
+print(num1)
+
+❖ Self: va a representar al objeto en sí
+-
+❖ INIT: -
+- -
+-
+uno mismo
+son los estados dentro de las clases
+es el constructor del objeto
+define cual es el estado inicial del objeto (puede ser dinamico o no)
+un método genérico(reservado) que me permite darle vida al objeto tal y como es
+es el constructor de la clase
+class Golondrina:
+ def __init__(self, energia):
+   self.energia = energia
+
+ Todos los métodos dentro de una clase llevan el self
+Procedimiento: - class
+- def
+- self
+Y al final paso los datos:
+pepita = Golondrina(100)
+anastasia = Golondrina(200)
+roberta = Dragon(10, 1000)
+100 es la energía inicial, 200 y 1000
+Roberta tiene dos parámetros porque el constructor de los dragones necesita la cantidad de dientes.
+
+❖ ¿Cuáles de estos son objetos?: Los números, strings, booleanos, listas y diccionarios.
+
+❖ POLIMORFISMO: una clase/objeto le envía un mensaje a otros dos (la clase que envía el mensaje y al menos dos que la reciban). Un mismo mensaje tenga otros resultados.
+Para que un objeto sea polimórfico con otro tiene que haber un tercer objeto que observe esto (el tercero va a darle órdenes a los otros para comunicarse)
+
+❖ EXCEPCIONES: lo que nos aparece cuando algo no anda.
+
+❖ Para ver cómo funciona un objeto tenemos que instanciar el objeto. Ejemplo:
+Dada la siguiente clase, identificá la interfaz y el estado de la misma:
+class Perro:
+def __init__(self):
+self._alimento = 0 self._caricias = 0
+def energia(self):
+return self._alimento + (self._caricias * 10)
+def comer(self, gramos): self._alimento += gramos
+def acariciar(self): self._caricias += 1
+def estaDebil(self):
+return self._caricias < 2
+
+El ejemplo de arriba no tiene parámetros
+Self es un parámetro obligatorio para todas las clases pero no lo consideramos parámetro (si me dice self es parámetro? digo NO)
+❖ MÉTODO: es la palabra/frase que está luego del def y dentro de una clase.

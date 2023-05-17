@@ -1,0 +1,121 @@
+Los OBJETOS tienen ATRIBUTOS y al conjunto de los mismos se los denomina ESTADO. 
+Los atributos también son objetos y nos permiten guardar valores y representar características del objeto que los posea.
+
+Para conocer el estado de un objeto, podemos acceder a cada uno de sus atributos escribiendo objeto.atributo
+Habrás notado que, a diferencia de cuando envíamos un mensaje, al acceder a un atributo no vamos a usar paréntesis.
+
+INTERFAZ: conjunto de mensajes que entiende
+
+EJEMPLO:
+celular_de_eli = Celular(70, 100)
+celular_de_fer = Celular(50, 300)
+
+70 y 50 son las baterias
+100 y 300 es el saldo
+
+CLASE: molde que nos permite crear objetos
+INSTANCIA: cada objeto que creamos a partir de una clase
+
+EJEMPLO:
+cancion_favorita_de_gus = Cancion("Cinema Verité", "Serú Girán")
+
+Cancion es una clase;
+Cancion("Cinema Verité", "Serú Girán") nos permite instanciar un objeto de la clase Cancion con el título "Cinema Verité" y la banda "Serú Girán";
+cancion_favorita_de_gus es una referencia a esa instancia para que podamos acceder a ella.
+
+LA CLASE SERÍA:
+class Cancion:
+  def __init__(self, un_titulo, una_banda):
+    self.titulo = un_titulo
+    self.banda = una_banda
+
+Donde titulo y banda son atributos de sus instancias. 
+
+EJEMPLO DE CLASS:
+class Celular:
+  def __init__(self,una_bateria,un_saldo):
+    self.bateria = una_bateria
+    self.saldo = un_saldo
+
+
+__INIT__: viene de la palabra en inglés initialize que en castellano es inicializar. 
+Es lo que se conoce como el constructor de una clase y nos permite darle valores iniciales a los atributos de sus instancias a la hora de crearlas
+
+SELF:(que en castellano sería algo así como yo) es un primer parámetro obligatorio que nos permite acceder a los atributos del objeto que estamos instanciando. 
+Si bien ese parámetro no debe llamarse selfobligatoriamente, es la convención que se utiliza para nombrarlo y la respetaremos a lo largo de todo el recorrido
+
+EJEMPLO:
+class Pintura:
+  def __init__(self, un_artista, una_tecnica, un_ancho, un_alto):
+        self.artista = un_artista
+        self.tecnica = una_tecnica
+        self.ancho = un_ancho
+        self.alto = un_alto 
+
+la_noche_estrellada = Pintura('Vincent van Gogh', 'impresionismo', 92, 74)      #esto seria instanciar
+
+
+Para que un objeto entienda un mensaje debemos "enseñarle" cómo hacerlo, y para ello es necesario definir un método dentro de la clase a la que pertenece
+
+MÉTODO: a descripción de qué hacer cuando se recibe un mensaje del mismo nombre
+El conjunto de estos métodos provee de comportamiento a las instancias de una clase
+
+EJEMPLO:
+class Celular:
+  def __init__(self, una_bateria, un_saldo):
+    self.bateria = una_bateria
+    self.saldo = un_saldo
+
+  def tiene_bateria_maxima(self):
+    return self.bateria == 100
+
+
+EJEMPLO:
+class Caballo:
+  def __init__(self,una_energia, una_raza):
+    self.energia = una_energia
+    self.raza = una_raza
+
+  def comer(self, gramos):
+    self.energia += gramos * 2
+
+  def galopar(self, kms):
+    self.energia -= kms
+
+
+EJEMPLO: Nuestro amigo el señor Schrödinger al ver nuestra habilidad para programar animales, nos pidió que definamos una clase Gato . Las instancias de esta clase deben:
+
+tener una energia y una edad;
+entender el mensaje comer, al hacerlo su energia aumenta en la cantidad de gramos consumidos;
+poder cumplir_anios, al hacerlo su edad sube 1 año. 
+
+RESPUESTA:
+class Gato:
+  def __init__(self,energia, edad):
+    self.energia = energia
+    self.edad = edad
+  
+  def comer(self, gramos):
+    self.energia += gramos
+  
+  def cumplir_anios(self):
+    self.edad += 1
+
+METHOD LOOKUP: cuando les enviamos mensajes a los objetos, cada objeto le pregunta qué hacer a su clase
+
+
+
+PREGUNTA: cuales son correctas?
+nano = Caballo(500, "Cuarto De Milla")
+pepita = Golondrina(200, "General Las Heras")
+theo = Gato(50, 7)
+kali = Gato(30, 13)
+
+X nano entiende el mensaje galopar 
+pepita entiende el mensaje galopar
+"Cuarto De Milla" es la ciudad de nano
+theo y nano hacen lo mismo cuando reciben el mensaje comer
+X theo y kali hacen lo mismo cuando reciben el mensaje comer
+X kali tiene más años que theo
+Si hacemos pepita.volar_hacia("Quilmes") su ciudad será "Quilmes" y su energía 50
+X Si hacemos nano.comer(100) su energía será 700

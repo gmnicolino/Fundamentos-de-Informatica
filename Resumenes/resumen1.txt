@@ -71,3 +71,92 @@ Bloque FINALLY --> se ejecuta siempre, tengamos o no error
 
 
 VALUE ERROR: evalua los errores con tipos de datos erroneos (ejemplo: poner un string donde hay que poner un integer)
+
+os.mkdir(path_resultado) --> crea carpetas
+
+
+
+Para enviarle mensajes a los objetos usamos --> objeto.mensaje()
+Ej:    Batman necesita.descanso()
+
+str.upper("mumuki") --> str.upper es una función y "mumuki" es el objeto string que recibe como argumento
+MEJOR:
+"mumuki".upper() --> donde "mumuki" es el objeto receptor del mensaje upper.
+
+Upper: devuelve una cadena con los caracteres alfabeticos en mayusculas
+
+CODIGO
+str.upper("mumuki")
+    'MUMUKI'
+  "mumuki".upper()
+    'MUMUKI'
+  numeros
+    [2, 4, 8]
+  list.append(numeros, 16)
+  numeros
+    [2, 4, 8, 16]
+  numeros.append(32)
+  numeros
+    [2, 4, 8, 16, 32]
+
+
+
+
+
+x.upper(): este método devuelve una copia de la cadena convirtiendo las letras minúsculas a mayúsculas. 
+El hecho de que devuelva una copia significa que la variable original no se ve afectada por la operación.
+
+x.lower(): devuelve una copia de la cadena convirtiendo las letras mayúsculas a minúsculas.
+
+x.title(): devuelve una copia de la cadena usando la notación de título.
+
+x.replace(viejo, nuevo): devuelve una copia de la cadena a la cual se le ha cambiado la primera ocurrencia del carácter especificado en viejo por el especificado en nuevo.
+
+x.lstrip(): devuelve una copia de la cadena a la cual se le han eliminado los espacios del principio.
+
+x.rstrip(): se comporta igual que el anterior pero para los espacios del final.
+
+x.split(sep=None): devuelve una lista de las palabras de la cadena separadas acorde el parámetro sep. Si este parámetro no se especifica o es None, la cadena se separa teniendo en cuenta los espacios en blanco.
+Si usamos el símbolo arroba (@) como separador y nuestra cadena es una dirección de correo electrónico, podemos separar los nombres de usuario y servidor.
+>>> x = "Programa en Python"
+>>> x.split()
+['Programa', 'en', 'Python']
+>>> email = "nombre.apellido@ejemplo.tld"
+>>> email.split('@')
+['nombre.apellido', 'ejemplo.tld']
+
+
+Este método también nos permite especificar el número de decimales que se muestran en números de coma flotante:
+>>> from math import pi
+>>> "El numero pi es {}".format(pi)
+'El numero pi es 3.141592653589793'
+>>> "El numero pi es {n:1.4f}".format(n=pi)
+'El numero pi es 3.1416'
+
+El método format() puede producir código un poco engorroso de leer cuando tratamos con strings largos que contienen múltiples parámetros.
+Es por ello que en Python 3.6 se añadieron los f-strings. 
+Los f-strings son cadenas de texto con una f al inicio y expresiones entre llaves que se sustituyen por sus valores, tal y como se muestra a continuación.
+>>> animal = "perro"
+>>> nombre = "Ashley"
+>>> edad = "tres"
+>>> f"Mi {animal} se llama {nombre} y tiene {edad} años"
+'Mi perro se llama Ashley y tiene tres años'
+
+
+
+
+Algo que resulta muy útil es poder acceder a los archivos que hayan en una determinada carpeta sin conocer sus nombres en particular, o acceder a un grupo de estos archivos que tengan algo en común (que todos tengan la misma extensión por ejemplo), más aún si son archivos que el programa genera en su ejecución, de manera de que a priori no los tenemos. 
+Para esto podemos usar dos herramientas, el método listdir de la biblioteca os y el método glob de la biblioteca glob. 
+Con el primero obtenemos una lista de todos los archivos que se encuentran en una carpeta, mientras que con el segundo, además de esto, tenemos la posibilidad de listar archivos específicos. Es decir:
+
+>>> import os
+>>> import glob
+>>> os.listdir()
+['Ej1.py', 'Ej3.py', 'archivo2.txt', 'Ej2.py', 'Ej4.py', 'documento.txt', 'Ej5.py'...]
+>>> glob.glob("*")
+['Ej1.py', 'Ej3.py', 'archivo2.txt', 'Ej2.py', 'Ej4.py', 'documento.txt', 'Ej5.py'...]
+>>> glob.glob("*.py")
+['Ej1.py', 'Ej3.py', 'Ej2.py', 'Ej4.py', 'Ej5.py'...]
+
+DIFERENCIA ENTRE FUNCION Y PROCEDIMIENTO 
+Una función se referencia utilizando su nombre en una expresión, mientras que un procedimiento se referencia por su llamada o invocación al mismo.

@@ -13,4 +13,899 @@ String siempre se escribe entre comillas y se puede almacenar en una variable
 Concatenar/unir --> usamos el + 
 Se puede concatenar strings almacenandolos o no en variables 
 
+TITLE() --> pone en mayuscula la primera letra de cada palabra de un string.
+Si el string está mitad en mayuscula y minuscula pone todo en minuscula menos las primeras letras.
+
+EJEMPLO:
+nombre = "Programación"
+print(nombre.title())
+
+UPPER() --> convierte todos los caracteres de un string en mayuscula.
+
+EJEMPLO:
+print(nombre.upper())
+
+LOWER() --> convierte todo el texto en minuscula.
+
+EJEMPLO:
+print(nombre.lower())
+
+SALTO DE LINEA (\n) --> lo uso para printear mas de una cosa pero en un solo print y que se vea uno abajo del otro
+
+TABULACIÓN (\t) --> va despues de \n 
+--> un enter al principio de cada elemento
+
+EJEMPLO:
+print("Hola \n \t mañana \n\t voy a dormir \n\t mucho")
+
+Puedo poner la cantidad de tabulaciones y saltos de linea que quiera
+
+OPERADORES BÁSICOS
++       suma
+-       resta 
+*       multiplicación
+/       división
+
+El + sirve para concatenar
+Para concatenar en números tengo que usar COMAS
+
+Para elevar un número uso ** 
+EJEMPLO:
+elevado = 10 ** 2
+print(elevado)
+
+FLOATS/DECIMALES --> se pone punto(.) en lugar de coma(,)
+
+ROUND/RENDONDEO --> num 1 = 10.5
+                    num 2 = 5.42612
+                    resultado = num 1 + num 2
+                    print(round(resultado))
+
+Agrego como parámetro el número de decimales que quiero ver 
+                    print(round(resultado,2))
+
+LISTAS --> no inmutables
+       --> colección de elementos
+       --> el número de posición arranca desde el cero (0)
+
+EJEMPLO:
+celulares = ["Xiaomi", "Iphone", "Samsung", "Huawei"]
+print(celulares[1])
+                        --> imprime Iphone
+
+print(celulares[2+1])
+                        --> imprime Huawei
+
+print(celulares[1][0])
+                        --> imprime I, la primera letra del elemento 1
+
+POSICIONES NEGATIVAS EN LISTAS --> en [-1] para pedir el último elemento de la lista
+
+EJEMPLO:
+print(celulares[-2])
+                        --> imprime Samsung
+
+ELIMINAR ELEMENTOS DE UNA LISTA:
+--> pop
+--> del
+--> remove
+
+EJEMPLO:
+celulares = ["Xiaomi", "Iphone", "Samsung", "Huawei"]
+del celulares [-2]
+print(celulares)
+                        --> imprime la lista menos Samsung
+
+
+celulares = ["Xiaomi", "Iphone", "Samsung", "Huawei"]
+celulares.remove("Iphone")    --> puedo eliminar la cantidad que quiera (poniendo enter y escribiendolo abajo)
+print(celulares)
+                        --> imprime la lista menos Iphone
+
+
+celulares = ["Xiaomi", "Iphone", "Samsung", "Huawei"]
+guardalista = celulares.pop(1)
+print(celulares)
+                        --> imprime la lista menos Iphone
+print("El celular eliminado de la lista y guardado es el: " + guardalista)
+
+
+AÑADIR ELEMENTOS A UNA LISTA YA CREADA
+--> insert (en cualquier posicion)
+--> append --> añade un elemento al final de la lista 
+
+celulares = ["Xiaomi", "Iphone", "Samsung", "Huawei"]
+celulares.append("Motorola")    
+print(celulares)
+                        --> imprime la lista pero con Motorola al final
+
+celulares = ["Xiaomi", "Iphone", "Samsung", "Huawei"]
+celulares.insert(0, "Motorola")    
+print(celulares)
+                        --> imprime la lista pero con Motorola al principio
+
+Si pongo -1 va a quedar antes que "Huawei" despues de "Samsung"
+
+celulares = []
+celulares.append("Iphone")    
+print(celulares)
+                        --> imprime solo Iphone porque no hay mas elementos
+
+ORDENAR ALFABETICAMENTE LA LISTA 
+--> sort --> hace cambios permanentes
+
+celulares = ["Xiaomi", "Iphone", "Samsung", "Huawei"]
+celulares.sort()    
+print(celulares)
+                        --> imprime la lista en orden alfabetico
+
+celulares.sort(reverse = True)    
+print(celulares)
+                        --> imprime la lista en reversa alfabetico
+
+print(sorted(celulares))
+                        --> imprime la lista alfabeticamente 
+
+No es permanente sorted
+
+PARA CONTAR LOS ELEMENTOS DE UNA LISTA DE FORMA AUTOMÁTICA
+--> len 
+
+celulares = ["Xiaomi", "Iphone", "Samsung", "Huawei"]   
+print(len(celulares))
+                        --> imprime el numero de elementos
+
+TUPLAS: se escriben con parentesis (a diferencia de las listas)
+--> es similar a las listas
+--> inmutables
+
+PARA LLAMAR ELEMENTOS DE LA TUPLA:
+
+tupla = ("rojo", "amarillo", "azul", "verde")
+print(tupla[3])
+                        -->imprime el último elemento de la tupla
+
+PARA CONCATENAR EN TUPLAS USAMOS : , (comas)
+
+PARA SUMAR DOS NÚMEROS EN TUPLA USAMOS: + (mas)
+
+tupla= (10,15,20, "el resultado es: ")
+print=(tupla[3], tupla[0] + tupla[2])
+                        --> imprime "El resultado es 30"
+
+A las tuplas no se les puede agregar o sacar ningun elemento (no se puede usar append, insert, delete, etc)
+
+Para que Python reconozca a una tupla como tal debe ponerse una coma:
+tupla = [10,]
+
+PARA CONVERTIR UNA LISTA EN UNA TUPLA:
+--> tuple (crear una tupla a partir de una lista)
+
+celulares = ["Xiaomi", "Iphone", "Samsung", "Huawei"]
+tupla = tuple(celulares) 
+print(tupla)
+                        --> imprime la lista pero como tupla
+
+PARA CONVERTIR UNA TUPLA EN UNA LISTA:
+--> list
+
+tupla = ("rojo", "amarillo", "azul", "verde")
+lista = list(tupla) 
+print(lista)
+                        --> imprime la tupla pero como lista
+
+OPERADORES EN PYTHON
+>       mayor que
+<       menor que
+>=      mayor o igual que
+<=      menor o igual que
+==      igual
+!=      diferente
+
+ELIF --> nos permite añadirle cuantos condicionales queramos al IF
+
+INPUT --> se usa para que el usuario introduzca algo en la consola
+        edad = int(input("¿Edad?"))
+
+¿COMO COMPROBAR SI UN ELEMENTO ES TUPLA O LISTA?
+navegadores = ["chrome", "firefox", "opera", "safari"]
+print("chrome" in navegadores)
+                        --> imprime True
+
+Clase	Tipo	    Notas	                            Ejemplo
+int	    Números	    Número entero con precisión fija.	42
+long	Números	    Número entero en caso de overflow.	42L ó 456966786151987643L
+float	Números	    Coma flotante de doble precisión.	3.1415927
+complex	Números	    Parte real y parte imaginaria j.	(4.5 + 3j)
+
+
+EJEMPLO:
+
+entrada = input("introduce un navegador: \n")
+navegadores = ["chrome", "firefox", "opera", "safari"]
+
+if entrada in navegadores:
+    print("está en la lista")
+
+else:
+    print("no está en la lista")
+
+                        --> imprime una de las dos frases
+
+
+EJEMPLO:
+comprar = []
+dinero = 1500
+espada LV1 = 150
+espada LV2 = 1200
+escudo LV1 = 100
+escudo LV2 = 750
+
+if 0 in comprar or comprar == []:
+    print("Especifica un numero entre 1 y 4")
+
+if 1 in comprar:
+    dinero = dinero - espada LV1
+
+if 2 in comprar:
+    dinero = dinero - espada LV2
+
+if 3 in comprar:
+    dinero = dinero - escudo LV1
+
+if 4 in comprar:
+    dinero = dinero - escudo LV2
+
+else:
+    print("Especifica un numero entre 1 y 4")
+
+if dinero < 0:
+    print("No te llega el dinero para todo eso!")
+
+if comprar == [1] or comprar == [2] or comprar == [3] or comprar == [4]:
+    print("Te quedan: " + str(dinero) + "monedas de oro")
+    print("Se anñadió el/los objetos a tu inventario")
+
+
+El if y el print pueden ir en una sola línea:
+    if x < y: print("se ejecuta if")
+
+El if, print, else, y el print pueden ir una sola linea:
+    print("se ejecuta el if") if x<y else print("se ejecuta el else")
+
+
+AND --> hace que ambas cosas sean requisitos
+
+OR --> hace como mñinimo que una condicion se cumple
+
+Si quiero dejar un if para luego o no se que poner uso: PASS
+
+EJEMPLO:
+if x<y:
+    pass
+
+BUCLES
+        - WHILE
+        - FOR
+
+WHILE: podemos ejecutar un conjunto de declaraciones siempre que una condicion sea verdadera --> si se convierte en falsa sale del bucle y el programa continuará con el flujo normal (el codigo despues del Bucle)
+(mientras que)
+
+x = 1
+while x < 10:
+    print(x)
+                        --> esto crea un Bucle infinito, hasta que X no sea igual a 10, seguirá corriendo
+
+
+x = 1
+while x < 10:
+    print(x)
+    x += 1
+                        --> imprime del 1 al 9
+
+
+CUANDO A UN STRING QUIERO AGREGARLE UNA LINEA MAS:
+
+frase = "hola"
+frase += "mundo"
+
+ESCRIBIR UNA PALABRA PARA TERMINAR EL BUCLE:
+
+frase = "lo que escribas, lo repito"
+frase += "\nIntroduce ´salir´para terminar \n"
+
+mensaje = " "
+
+while mensaje != "salir":
+    mensaje = input(frase)
+    print(mensaje)              --> imprime las frases repitiendo al comienzo lo escrito en la terminal hasta que yo ponga "salir"
+
+print("se ha salido del Bucle")         --> esto solo se imprime cuando pongo salir
+
+
+En este caso si se identifica como False lo puesto en el While se sale del Bucle
+
+SI HAY UN IF ADENTRO DEL WHILE, MANDA EL IF
+
+x = 1
+while x <= 10:
+    print(x)
+    if x == 5:
+        break
+    x += 1                  --> imprime solo hasta el 5
+
+
+x = 1
+while x <= 10:
+    print(x)
+    x += 1  
+else:
+    print("Saliendo del Bucle while..")
+
+PARA EJECUTAR UN BUCLE WHILE SALTEANDO LAS PARTES QUE NOS INTERESEN:
+--> continue (hace que se saltee una cosa y continue con lo que sigue por debajo)
+
+x = 0
+while x < 10:
+    x += 1  
+    if x == 5 or x == 7:
+        continue
+    print(x)                --> imprime de 1 al 10 sin el 5 y el 7 pero no sale del Bucle hasta llegar al 10
+
+EJEMPLO:
+
+cursos = ("Python", "JavaScript", "COBOL", "HTML")
+for x in cursos:
+    print(x)                --> imprime Python JavaScript COBOL HTML
+
+PUEDO USAR UN CONTINUE:
+cursos = ("Python", "JavaScript", "COBOL", "HTML")
+for x in cursos:
+    if x == "COBOL":
+        continue
+    print(x)                --> imprime Python JavaScript HTML
+
+
+Se cambio el continue por BREAK me imprimirá solo "Python" ya que llega hasta la palabra que puse en el if.
+
+Si quiero poner bucle por vacios utilizo el PASS
+for x in []:
+    pass
+
+RANGE --> especifica un rango
+
+for x in range (10):
+    print(x)                --> imprime del 0 al 9, no hace falta especificar el incremento
+
+for x in range (5,10):
+    print(x)                --> imprime 5, 6, 7, 8, 9 (uno abajo del otro)
+
+PARA INCREMENTAR:
+for x in range (5,25, 2):   --> el 2 significa de 2 en 2
+    print(x)                --> imprime 5, 7, 9, 11, 13, 15, 17, 19, 21, 23 (uno abajo del otro)
+
+
+EJEMPLO:
+print("lista de numeros: \n")
+
+numeros = [2,4,8,16,32,64,128]
+
+for x in range (len(numeros)):
+    print("numero de operacion -->", x, "multiplicacion -->", numeros [x], "resultado -->", numeros[x]*numeros[x])
+
+
+EJEMPLO:
+for x in range(10):
+    print(x)
+else:
+    print("Se acabo el bucle for...")
+                            --> imprime del 0 al 9 y luego el print
+
+num1 = ["1","2", "3", "4", "5"]
+num2 = "0"
+num3 = "7"
+
+for x in num1:
+    for y in num2:
+        for z in num3:
+            print(x + y + z)
+                            --> imprime 107 207 307 407 507 (uno abajo del otro)
+
+
+DICCIONARIOS
+Se puede tener varios elementos con atributos
+
+celular1 = {
+    "Marca" : "Iphone"
+    "Color" : "Verde"
+    "Año" : "2023"
+}
+
+celular2 = {
+    "Marca" : "Samsung"
+    "Color" : "Violeta"
+    "Año" : "2022"
+}
+
+consulta = celular1 ["Marca"], celular2 ["Marca"]
+print(consulta)
+                            --> imprime la marca de ambos celulares
+
+QUIERO QUE ME MUESTRE TODO EL DICCIONARIO:
+--> dict
+
+celular1 = {
+    "Marca" : "Iphone"
+    "Color" : "Verde"
+    "Año" : "2023"
+}
+
+celular2 = {
+    "Marca" : "Samsung"
+    "Color" : "Violeta"
+    "Año" : "2022"
+}
+
+muestracelular = dict(celular1)
+print(muestracelular)
+                            --> imprime todo dentro del diccionario celular 1 
+                        Otra opcion es poner directo print(celular1)
+
+EJEMPLO:
+celular1 = {
+    "Marca" : "Iphone"
+    "Color" : "Verde"
+    "Año" : "2023"
+}
+consulta = celular1.get("Marca")
+print(consulta)
+
+SI QUIERO MODIFICAR ALGO EN UN DICCIONARIO
+celular1 = {
+    "Marca" : "Iphone"
+    "Color" : "Verde"
+    "Año" : "2023"
+}
+celular1["Año"] = "2021"
+print(celular1.get("Año"))
+                            --> imprime el año del diccionario pero ahora como 2021
+
+BUCLE FOR EN DICCIONARIO
+celular1 = {
+    "Marca" : "Iphone"
+    "Color" : "Verde"
+    "Año" : "2023"
+}
+for x in celular1:
+    print(x)                --> imprime elementos (marca, color, año)
+
+for x in celular1:
+    print(celular1[x])      --> imprime los valores
+
+for x in celular1.values():
+    print(x)                --> imprime los valores
+
+for x,y in celular1.items():
+    print(x,y)              --> imprime elementos + valores
+
+for x,y in celular1.items():
+    print(x,":",y)          --> imprime elementos + valores
+
+PARA TENER LONGITUD DEL DICCIONARIO:
+--> len
+
+celular1 = {
+    "Marca" : "Iphone"
+    "Color" : "Verde"
+    "Año" : "2023"
+}
+
+celular2 = {
+    "Marca" : "Samsung"
+    "Color" : "Violeta"
+    "Año" : "2022"
+}
+
+print(len(celular1) + len(celular2))        --> imprime 6 (3 elementos de cada diccionario)
+
+
+PARA ELIMINAR ELEMENTOS:
+--> del
+--> pop
+
+celular1 = {
+    "Marca" : "Iphone"
+    "Color" : "Verde"
+    "Año" : "2023"
+}
+celular1.pop("Marca")
+print(celular1)                     --> imprime el diccionario sin el elemento y sin su valor
+
+delcelular1["Año"]
+print(celular1)                     --> elimina el elemento y el valor del año
+
+BORRAR TODO EL DICCIONARIO:
+--> del
+--> clear 
+
+delcelular1                         --> poniendo esto se elimina el diccionario
+
+celular1.clear()
+print(celular1)                     --> vacia un diccionario entero e imprime {}
+
+
+PARA AGREGAR ELEMENTOS DEL DICCIONARIO:
+
+celular1 = {
+    "Marca" : "Iphone"
+    "Color" : "Verde"
+    "Año" : "2023"
+}
+celular1["Modelo"] = "Iphone 15"                    o                   celular1.update({"Modelo":"15"})
+print(celular1)                                                         print(celular1)
+
+PARA COPIAR EL DICCIONARIO:
+--> dict
+--> copy
+
+celular1copia = celular1.copy()
+print(celular1copia)
+
+=
+
+celular1copia = dict (celular1)
+print(celular1copia)
+
+PARA CONSTRUIR NUEVOS DICCIONARIOS
+--> dict
+
+celular3 = dict(Marca = "Huawei", 
+                Color = "Blanco"
+                Año = "2019")
+print(celular3)
+
+PARA AUTOGENERAR VALORES REPETITIVOS
+--> dict
+
+celular3 = ("Marca", "Color", "Año")
+celular3 = dict.fromkeys (celular3, "Vacio")
+print(celular3)
+
+PARA AÑADIR VALORES AL DICCIONARIO
+--> update
+
+celular1.update ({"Precio" : "150.50"})
+print(celular1)
+
+En diccionario podes usar ELSE e IF
+
+PARA LLAMAR A TODOS LOS DICCIONARIOS:
+celulares = {
+    celular1 = {
+    "Marca" : "Iphone"
+    "Color" : "Verde"
+    "Año" : "2023"
+    }
+
+celular2 = {
+    "Marca" : "Samsung"
+    "Color" : "Violeta"
+    "Año" : "2022"
+    }
+}
+print(celulares)
+
+PARA SABER CUANTOS DICCIONARIOS HAY:
+--> len
+
+print(len(celulares))
+
+
+FUNCIONES
+
+PARA LLAMAR FUNCIONES
+def saluda():
+    print("Bienvenidos")
+saluda()
+
+EJEMPLO:
+
+print("Familia Simpson \n")
+
+def familias(Nombre, parentesco):
+    print(Nombre + "Simpson" + parentesco)
+
+familiaS ("Homero", "Padre")
+familiaS ("Marge", "Madre")
+
+CON ARGUMENTOS ARBITRARIOS:
+def alumnos(*args):
+    print("el ultimo es " + args[3] + "y el primero es " + args[0])
+
+alumnos("Julia", "Rocio", "Romina", "Juan")
+
+
+
+COMBINACION DE ARGUMENTOS OBLIGATORIOS Y ARBITRARIOS
+
+def alumnos_profesires(profesor, sustituto, *args):
+    print("Profesor: " + profesor)
+    print("Sustituto: " + sustituto)
+    for x in args:
+        print("Alumno: " + x)
+
+lista_alumnos = ["Ana", "Lucia", "Pablo", "Pedro"]
+
+alumnos_profesores = ["Antonio", "Alberto", lista_alumnos]
+
+
+DICCIONARIOS EN LAS FUNCIONES
+
+def colores (color1, color2, color3, color4):
+    print("Este es el color: " + color 1)
+
+colores(color1 = "rojo", color2 = "verde", color3 = "azul", color4 = "gris")
+
+                                    ---> imprime "Este es el color rojo"
+
+DICCIONARIOS EN LAS FUNCIONES CON ARGUMENTOS FLEXIBLES:
+--> **kwargs
+
+En los diccionarios, los elementos se llaman "keywords" y sus valores "values"
+
+def colores(**kwargs):
+    print("Este es el color: " + kwargs["color1])
+
+colores(color1 = "rojo", color2 = "verde", color3 = "azul", color4 = "gris")
+
+DEF
+
+def suma (x,y):
+    return x + Y
+total = suma(10,10)
+print(total)
+
+
+def resta (x,y):
+    return x - y
+total = resta(10,10)
+print(total)
+
+def multiplicacion (x,y):
+    return x * y
+total = multiplicacion(10,10)
+print(total)
+
+def division (x,y):
+    return x / y
+total = division(10,10)
+print(total)
+
+VSO del PASS en funciones
+def colores():
+    pass
+
+def colores(color = "rojo"):
+    print("Mi color es: " + color)
+colores("azul")
+                                --> imprime "Mi color es azul"
+
+colores()
+                                --> imprime "Mi color es rojo"
+
+CLASES Y OBJETOS (POO)
+
+INSTANCIACION --> hacer un objeto a partir de una clase
+
+EJEMPLO
+class Naves():
+    peso = 2500
+    largo = 50
+    ancho = 20
+    color1 = "Negro"
+    color2 = "Plateado"
+    motores = 4
+    activada = False
+    compuerta_principal = False
+    sistema_defensa = True
+    autodestruccion = False
+
+    def encender(self):
+        self.activada = True
+
+    def apagar(self):
+        self.activada = False
+
+    def abrir_compuerta(self):
+        self.compuerta_principal = True
+
+    def cerrar_compuerta(self):
+        self.compuerta_principal = False
+
+    def desactivar_defensas(self):
+        self.sistema_defensa = False
+
+    def activar_defensas(self):
+        self.sistema_defensa = True
+
+    def activar_autodestrucion(self):
+        self.autodestruccion = True
+        mensaje = "Protocolo de autodestrucción activado..."
+        print(mensaje)
+
+    def estado_motores(self):
+        if (self.activada):
+            return "Motores trabajando al 100%."
+        else:
+            return "Motores apagados."
+
+    def estado_compuerta(self):
+        if (self.compuerta_principal):
+            return "La compuerta está abierta."
+        else:
+            return "La compuerta está cerrada."
+
+    def estado_defensa(self):
+        if (self.sistema_defensa):            
+            return "El sistema de defensa está activado."
+        else:
+            return "¡Peligro! El sistema de defensa está desactivado."
+    
+#Se crea el objeto nave1 perteneciente a la clase Naves.
+    
+nave1=Naves()
+
+#Comandos (llamadas) al objeto.
+
+#Enciende nave.
+nave1.encender()
+
+#Comprueba estado de los motores.
+print(nave1.estado_motores())
+
+#Apaga nave.
+nave1.apagar()
+
+#Comprueba estado de los motores.
+
+print(nave1.estado_motores())
+
+#Abre la compuerta.
+nave1.abrir_compuerta()
+
+#Comprueba el estado de la compuerta.
+print(nave1.estado_compuerta())
+
+#Cierra compuerta.
+nave1.cerrar_compuerta()
+
+#Comprueba el estado de la compuerta.
+print(nave1.estado_compuerta())
+
+#Comprueba el estado de la defensas.
+print(nave1.estado_defensa())
+
+#Desactiva las defensas.
+nave1.desactivar_defensas()
+
+#Comprueba el estado de la defensas.
+print(nave1.estado_defensa())
+
+#Ejecuta la autodestrucción de la nave.
+nave1.activar_autodestrucion()
+
+SELF --> hace referencia a cualquier nombre que creemos
+
+class Usuarios():
+    def__init__(self, nombre, pin):
+        self.nombre = nombre
+        self.pin = pin
+int(input("Ingrese un numero: "))               --> afuera o adentro de un def
+    def saludo(self):
+        print("Saludos" + self.nombre + ". Iniciaste correctamente)
+
+    def despedida(self):
+        print(self.nombre + ", cerraste la sesión")
+
+usuario1 = Usuarios("Toni", "1234")
+usuario2 = Usuarios("Julia", "2256")
+
+usuario1.saludo()
+usuario2.saludo()
+usuario1.despedida
+
+
+CREAR UN OBJETO Y CAMBIARLE EL VALOR DE ALGUNO DE SUS ARGUMENTOS
+
+class Usuarios():
+    def__init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+
+    def muestra_datos(self):
+        print("el nombre de usuario es " + self.nombre, self.edad)
+
+usuario1 = Usuarios("Toni", "34")
+usuario1.muestra_datos()
+
+usuario1.edad = 65
+usuario1.muestra_datos()
+
+Se puede dejar el nombre de la clase sin parentesis
+
+PASS en una clase
+class nombreClase():
+    pass
+
+ELIMINAR PROPIEDAD:
+--> del
+
+class Usuarios():
+    def__init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+    
+    def muestra_datos(self):
+        print("el nombre de usuario es " + self.nombre, self.edad)
+
+usuario1 = Usuarios("Toni", "34")
+
+print(usuario1.nombre, usuario1.edad)
+
+del usuario1.edad
+
+print(usuario1.nombre, usuario1.edad)       --> esto arroja ERROR
+
+PARA ELIMINAR COMPLETAMENTE EL OBJETO:
+
+del usuario1
+
+
+HERENCIA
+- nos permite definir una clase que hereda todos los métodos y propiedades de otra clase
+- tenemos clase base (de la cual se hereda)
+- clases derivadas (secundarias)
+
+class Usuarios():
+    def__init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+    
+    def muestra_datos(self):
+        print("Usuario: " + self.nombre, "y tiene" , self.edad)
+
+usuario1 = Usuarios("Lola", 28)
+usuario1.muestra_datos()
+
+class Usuarios_premium(Usuarios):
+    pass
+
+usuario2 = Usuarios_premium("Elisa", 55)
+usuario2.muestra_datos()
+
+HEREDAR PROPIEDADES DE OTRA CLASE
+
+class Usuarios():
+    def__init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+    
+    def muestra_datos(self):
+        print("El usuario es: " + self.nombre, "y tiene" , self.edad, "años")
+
+usuario1 = Usuarios("Lola", 28)
+usuario1.muestra_datos()
+
+class Usuarios_premium(Usuarios):
+    def__init__(self, nombre, edad, instagram):
+        Usuarios.__init__(self, nombre, edad)
+        self.instagram = instagram
+    
+    def muestra_datos_premium(self):
+        print("Usuario: " + self.nombre, "y tiene" , self.edad, ". Su instagram es ", self.instagram)
+
+
+usuario2 = Usuarios_premium("Elisa", 23, "Eli_23")
+usuario2.muestra_datos_premium()
+
 

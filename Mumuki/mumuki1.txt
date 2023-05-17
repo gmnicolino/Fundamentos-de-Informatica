@@ -1,0 +1,56 @@
+Mensaje nuevo:
+str.startswith
+str.endswith
+str.strip
+str.lower
+list.remove
+str.upper("mumuki")
+list.append(numeros, 16)
+
+str y list solo son parte del nombre de la función. No son objetos
+
+Diferencia entre funciones y procedimientos:
+Sabemos que las funciones retornan un valor mientras que los procedimientos tienen un efecto, es decir, modifican algo.
+
+EJEMPLO:
+    celular_de_eli.tiene_bateria_maxima()
+False
+  celular_de_eli.cargar_a_tope()
+  celular_de_eli.tiene_bateria_maxima()
+True
+
+No podemos enviarle cualquier mensaje a cualquier objeto:
+EJEMPLO:
+  celular_de_eli.tiene_bateria()
+File "<input>", line 1, in <module>
+AttributeError: 'Celular' object has no attribute 'tiene_bateria'
+
+Lo que sucede es que para que podamos enviarle un mensaje a un objeto, el objeto tiene que entender ese mensaje. De lo contrario se lanzará un error
+
+INTERFAZ: Al conjunto de mensajes que podemos enviarle a un objeto
+
+EJEMPLO:
+    celular_de_eli.necesita_saldo()
+False
+    celular_de_eli.cargar_bateria()
+File "<input>", line 1, in <module>
+AttributeError: 'Celular' object has no attribute 'cargar_bateria'
+    celular_de_eli.tiene_bateria_maxima()
+False
+    celular_de_eli.cargar_a_tope()
+
+Los mensajes que conforman la interfaz son:
+necesita_saldo
+tiene_bateria_maxima
+cargar_a_tope
+
+EJEMPLO:
+  notebook_de_ro.tiene_bateria_maxima()
+False
+  notebook_de_ro.cargar_a_tope()
+  notebook_de_ro.necesita_saldo()
+File "<input>", line 1, in <module>
+AttributeError: 'Notebook' object has no attribute 'necesita_saldo'
+
+
+Si le pudimos enviar el mensaje necesita_descanso a los objetos batman y superman, esto significa que comparten parte de su interfaz. En otras palabras, necesita_descanso es parte de la interfaz compartida entre ambos objetos.
