@@ -1,0 +1,9 @@
+Para printear un flask tengo que:
+
+1- abrir la terminal con cmd J
+2- ls
+3- cd Flask_proyecto
+4- flask run.
+
+5- copio el URL
+6- lo pego en google y voy a poder ver la web.

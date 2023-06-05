@@ -28,3 +28,23 @@ print('The solution are {0} and {1}'.format(sol1,sol2))
 
 
 # Para continuar con algo ignorando el error hago uso del try (como si fuera un if)
+
+
+def eneavo(numero):
+    try:
+        print(1/numero)
+    except ZeroDivisionError:
+        print("No se puede dividir ese numero", numero)
+    except TypeError:
+        print("El", numero, "es un string")
+
+    print(numero)
+
+eneavo("9")
+eneavo(0)
+
+#OTRO CASO
+def check_int_type():
+  if type(x)  != int:
+    raise TypeError("Only integers are allowed") 
+    
