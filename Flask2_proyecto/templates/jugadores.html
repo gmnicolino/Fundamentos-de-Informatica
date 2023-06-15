@@ -1,0 +1,9 @@
+<!docttype html>
+<p>Mostrando todos los jugadores </p>
+<ul>
+{%for id, jugador in jugadores}
+    <li>
+        <a href="{{url_for("get_jugadores", id=id) }}">{{ jugador.name }}</a>
+    </li>
+{%endfor%}
+</ul>

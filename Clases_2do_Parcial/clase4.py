@@ -20,3 +20,25 @@
 # referencia {atributo(nombre): valor}
 
 
+#.welcome {              #esto hace que solo el nombre de la clase  "welcome "se pinte
+
+#El espacio de las frases en la web se llama Padding (el espacio desde los bordes)
+
+#Margin: establece los márgenes de un elemento especificando entre uno y cuatro valores, donde cada valor es una longitud, un porcentaje o auto
+#margin-lef:  5 px   ;
+#margin-top:  10 px  ;
+
+#        <p>Te damos la bienvenida a MacoWins</p>    --> esta es la etiqueta madre
+
+#margin-right:  50% ;            medida relativa a la clase madre
+
+
+#Boton derecho en la web
+#Inspeccionar
+
+
+#width: ancho
+#height: altura
+
+#padding: arriba  derecha  abajo  izquierda ;
+#padding: arribayabajo  derechaeizquierda ;

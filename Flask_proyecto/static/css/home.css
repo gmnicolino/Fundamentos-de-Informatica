@@ -1,3 +1,24 @@
+* {
+    margin:0;
+    padding:0;
+}
 h1 {
-    color: rgb(63, 203, 205)
+    color: rgb(63, 203, 205);
+}
+
+.welcome {   
+    background-color: rgb(227, 193, 245);
+}
+.welcome p {
+    color: rgb(88, 235, 235);
+    height:15px;
+    padding:15px 20px;
+}
+
+.welcome p:hover {
+    color: rgb(231, 80, 191);
+}
+
+.welcome img{
+    width: 1000;
 }
