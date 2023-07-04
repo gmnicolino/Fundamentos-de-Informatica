@@ -111,3 +111,16 @@ def es_fin_de_semana(dia):
 print(es_fin_de_semana("Lunes"))
 
 #el str.lower me sirve para que el dia lo tome como minúscula
+
+
+
+def cadena_num_letras(cadena):
+    letras_validas = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789" #incluye el espacioo
+    
+    for caracter in cadena:
+        if caracter not in letras_validas:
+            return False
+        else:
+          return True
+
+print(cadena_num_letras("&&&&"))
